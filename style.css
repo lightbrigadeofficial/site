@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: var(--text-color);
+    user-select: none;
+    width: device-width;
+}
+
+:root {
+    --Dark-Blue: #244855;
+    --Red: #E64833;
+    --Brown: #874F41;
+    --Light-Blue: #90AEAD;
+    --Skin: #FBE9D0;
+    --text-color: #131313;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: device-width;
+    padding: 30px, 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100000;
+    background-color: var(--text-color);
+    margin-top: 30px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+    position: sticky;
+}
+
+header .Logo {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 150%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-shadow: 0 0 25px var(--Dark-Blue);
+    margin-left: 27px;
+}
+
+.Logo:hover {
+    border-bottom: 4px solid red;
+}
+
+#logoimg {
+    width: 130px;
+    height: 110px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#logoimg:hover {
+    transform: scale(1.1);
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 140%;
+}
+
+header ul li:hover {
+    transform: scale(1.1);
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 10px 25px;
+    color: #fff;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    border-bottom: 4px solid red;
+    color: white;
+}
+
+.container {
+    position: relative;
+    margin-top: 13%;
+    margin-left: 38px;
+    padding-right: 38px;
+    align-content: center;
+}
+
+.text-block {
+    position: absolute;
+    left: 20px;
+    top: 35px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    font-size: 2rem;
+    border-left: 6px solid red;
+    cursor: text;
+}
+
+.upper {
+    padding-bottom: 30px;
+}
+
+.btn1 {
+    text-decoration: none;
+    padding: 10px 25px;
+    color: white;
+    background: red;
+    cursor: pointer;
+    font-size: 140%;
+    transition: 0.3s ease;
+    font: bold;
+    font-weight: 900;
+    transition: 0.3s;
+    margin-top: 38px;
+}
+
+.btn1:hover {
+    border-bottom: 4px solid white;
+    transition: 0.5s;
+}
+
+.about {
+    background-color: white;
+    margin-right: 38px;
+    margin-left: 38px;
+}
+
+.headingabout {
+    font-size: 145%;
+    font: bold;
+    color: black;
+}
+
+.headingaboutred:hover {
+    background-color: red;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.aboutdiv {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 50px;
+    margin-left: 46%;
+    font-size: 135%;
+    font: bold;
+    border-left: 1px solid black;
+}
+
+.redhigh:hover {
+    background-color: red;
+    transform: 0.3s;
+}
+
+.globe {
+    position: absolute;
+    padding-left: 5.5%;
+    rotate: 45deg;
+    padding-top: 4%;
+}
+
+.contentabout {
+    cursor: text;
+}
+
+.headingmission {
+    color: white;
+}
+
+.missiondiv {
+    padding-top: 20px;
+    margin-top: 38px;
+    margin-bottom: 38px;
+    padding-bottom: 20px;
+}
+
+.missions {
+    color: white;
+    font-size: 150%;
+    font: bold;
+    font-family: 'Times New Roman', Times, serifs;
+}
+
+.BLUE {
+    color: white;
+    font-size: 140%;
+    font-family: Georgia;
+    padding-right: 30px;
+}
+
+.imgseal {
+    position: relative;
+}
+
+.mission {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.btnmission1 {
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    background-color: black;
+    font-size: 140%;
+    font: bold;
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid white;
+}
+
+.btnmission1:hover {
+    border-bottom: 4px solid red;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    border-top: 1px solid red;
+    transition: 0.5s;
+}
+
+.contact {
+    background-color: white;
+    margin-right: 38px;
+    margin-left: 38px;
+}
+
+.headingcontact {
+    font: bold;
+    color: black;
+    font-size: xx-large;
+    font-family: georgia;
+}
+
+.contactdiv {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 6%;
+    padding-bottom: 5%;
+}
+
+.papr {
+    color: red;
+    font-size: 135%;
+    font-family: georgia;
+    font: bolder;
+}
+
+.contactdiv input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 4rem;
+    font-weight: 200;
+    padding: 1.4rem;
+    background: transparent;
+    border: 1px solid black;
+    font-size: large;
+    line-height: 6vh
+}
+
+.contactdiv input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 4rem;
+    font-weight: 200;
+    padding: 1.4rem;
+    background: transparent;
+    border: 1px solid black;
+    font-size: large;
+    line-height: 6vh
+}
+
+.submitform {
+    font-size: 180%;
+    font: bold;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    color: black;
+    padding: 12px 27px;
+    border: 1px dotted black;
+    cursor: pointer;
+}
+
+.submitform:hover {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 4px solid red;
+    transition: 0.3s;
+}
+
+.container {
+    max-width: 1170px;
+    padding-top: 18px;
+    margin: auto;
+    margin-left: 43px;
+    margin-right: 43px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-image: url('IO.png');
+    padding-top: 18px;
+    padding-bottom: 12px;
+}
+
+.footer-col {
+    width: 33%;
+    padding: 0 30;
+}
+
+.footer-col h4 {
+    font-size: 2rem;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+    padding-left: 8px;
+}
+
+.footer-col.social-links {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(225, 225, 225, 0.2);
+    margin: 0 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.footer-col.social-links a:hover {
+    color: #24262b;
+    background-color: #fff;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+
+    }
+}
+
+.copy {
+    color: white;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.float {
+    text-decoration: none;
+    color: white;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: wheat;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    font-size: xx-large;
+
+}
+
+.float:hover {
+    transform: scale(1.1);
+}
