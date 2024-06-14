@@ -138,7 +138,8 @@ header ul li a.active {
     background: transparent;
     border: 1px solid white;
     font-size: large;
-    line-height: 6vh
+    line-height: 6vh;
+    color: white;
 }
 
 .contactdiv input[type="email"] {
@@ -153,7 +154,8 @@ header ul li a.active {
     background: transparent;
     border: 1px solid white;
     font-size: large;
-    line-height: 6vh
+    line-height: 6vh;
+    color: white;
 }
 
 .submitform {
