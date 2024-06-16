@@ -387,7 +387,7 @@ ul {
 }
 
 .footer-col.social-links {
-    display: inline-block;
+    display: flex;
     height: 40px;
     width: 40px;
     background-color: rgba(225, 225, 225, 0.2);
