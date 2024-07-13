@@ -1,1 +1,1 @@
-Access the web at [htt](https://lightbrigadeofficial.github.io/site)
+Access the web at [https://lightbrigadeofficial.github.io/site](https://lightbrigadeofficial.github.io/site)
